@@ -6,4 +6,8 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
+    'Bootstrap' => $baseDir . '/library/Bootstrap.php',
+    'Controller' => $baseDir . '/library/Controller.php',
+    'Session' => $baseDir . '/library/Session.php',
+    'Views' => $baseDir . '/library/Views.php',
 );

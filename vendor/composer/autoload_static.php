@@ -38,11 +38,19 @@ class ComposerStaticInit8d0b9f5e2dfb10cec15388016c7c350f
         ),
     );
 
+    public static $classMap = array (
+        'Bootstrap' => __DIR__ . '/../..' . '/library/Bootstrap.php',
+        'Controller' => __DIR__ . '/../..' . '/library/Controller.php',
+        'Session' => __DIR__ . '/../..' . '/library/Session.php',
+        'Views' => __DIR__ . '/../..' . '/library/Views.php',
+    );
+
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
             $loader->prefixLengthsPsr4 = ComposerStaticInit8d0b9f5e2dfb10cec15388016c7c350f::$prefixLengthsPsr4;
             $loader->prefixDirsPsr4 = ComposerStaticInit8d0b9f5e2dfb10cec15388016c7c350f::$prefixDirsPsr4;
+            $loader->classMap = ComposerStaticInit8d0b9f5e2dfb10cec15388016c7c350f::$classMap;
 
         }, null, ClassLoader::class);
     }
