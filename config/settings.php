@@ -1,10 +1,10 @@
 <?php
-define('DS',DIRECTORY_SEPARATOR);
-define('ROOT', dirname(dirname(__FILE__)));
-define('BASIC_CLASS',ROOT.DS.'library/');
+/**
+ * Define website url including trailling slash on Domain "/"
+ * 
+ */
+// define('SITE_URL', 'http://localhost/mvctate/');
+$SITE_URL = 'http://localhost/mvctate/';
 
-function __autoload($class){
-    if(is_file(BASIC_CLASS.$class.".php")){
-        require BASIC_CLASS.$class.".php";
-    }
-}
+// site name
+define('SITE_NAME','Mukombi MVC');

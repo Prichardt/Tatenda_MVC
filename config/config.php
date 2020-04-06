@@ -1,6 +1,10 @@
 <?php
+
 define('DS',DIRECTORY_SEPARATOR);
 define('ROOT', dirname(dirname(__FILE__)));
+
+include 'settings.php';
+
 define('BASIC_CLASS',ROOT.DS.'library/');
 
 function __autoload($class){

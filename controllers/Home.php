@@ -1,8 +1,11 @@
 <?php
 
-class Home{
+class Home extends Controller{
 
+    function __construct(){
+        parent::__construct();
+    }
     public function index(){
-        echo "We are in home index";
+        $this->view->renderTemplate('home/index.html');
     }
 }
