@@ -1,6 +1,8 @@
 <?php
 class Views{
 
+    public const SITE_URL = "http://localhost/mvctate/";
+    public const SITE_NAME = "Heavenly Tech";
     /**
      * Render a view file
      * 
@@ -12,9 +14,10 @@ class Views{
      */
 
     public function render($name, $args = []){
+        // $siteName = self::SITE_NAME;
+        // $this->SITE_URL = "http://localhost/mvctate/";
         extract($args, EXTR_SKIP);
         require "views/$name";
-        // require 'views/footer.php';
     }
 
     public function renderTemplate($template, $args =[]){

@@ -1,0 +1,147 @@
+$theme: #008000;
+.theme-bg{
+background-color: $theme;
+color: #ffffff;
+}
+.theme-text{
+    color: $theme;
+}
+.top-bar{
+    border-bottom: 1px solid $theme;
+    background-color: rgba(0,0,0,0.7);
+    color: #ffffff;
+    ul{
+        list-style-type: none;
+        li{
+            display: inline-block;
+            
+            i{
+                padding: 0.4em;    
+                color: $theme;                
+            }
+            a>i{
+                padding: 0.16em;
+                border-radius: 50%;
+                font-size: 1.5em;
+            }
+        }
+    }
+    .linkedin-bg{
+        color: #0077B5;
+    }
+    .facebook-bg{
+        color:#4267B2;
+    }
+    .twitter-bg{
+        color: #1DA1F2;
+    }
+    .youtube-bg{
+        color: #FF0000;
+    }
+    .skype-bg{
+        color: #28A8EA;
+    }
+.top-bar-left{
+    padding: 0px;
+}
+.top-bar-right{
+    right: 0px;
+    margin-right: 0px;
+    float: right;
+}
+@media only screen and (max-width: 920px){
+    display: none;
+}
+
+}
+
+.navbar{
+    background-color: transparent;
+    .navbar-brand{
+        width: 250px;
+        height: auto;
+    }
+    .navbar-brand-scroll{
+        width: 150;
+        height: auto;
+    }
+  li a{
+        text-transform: uppercase;
+        font-weight: 600;
+        color: #ffffff;
+        &:hover{
+            color: $theme;
+        }
+        
+    }
+}
+.navbar-scroll{
+    border-bottom: 1px solid $theme;
+    background-color: rgba(0,0,0,0.7);
+}
+.banner-section{
+
+.carousel-caption{
+    background-color: rgba(0,0,0,0.8);
+    width: 100%;
+    height: 100%;
+    left: 0px;
+    bottom: 0px;
+    .caption-text{
+        position: relative;
+        top: 70%;
+        h5{
+            animation-delay: 3s;
+        }
+    }
+}
+.carousel-control-prev{
+    z-index: 10;
+}
+.carousel-control-next{
+    z-index: 10;
+}
+.carousel-indicators li {
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+}
+
+}
+.h-banner{
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 80vh;    
+}
+
+.dropdown{
+    &:hover.dropdown-menu{
+        display: block;
+    }
+}
+
+footer{
+    .horizontal-line-colour{
+        color: #dddddd;
+    }
+    .contact-details{
+        margin: 0 auto;
+        // text-align: justify;
+        h4{
+            text-align: center;
+        }
+        i{
+            color: $theme;
+            padding: 0.2em;
+            
+            float: left;
+        }
+        span{
+            float: left;
+            text-align: left;
+        }
+    }
+}

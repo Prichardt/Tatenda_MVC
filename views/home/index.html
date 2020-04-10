@@ -1,12 +1,53 @@
 {% extends "base.html" %}
 {% block title %}Home{%endblock%}
 {%block body%}
-<header class="bg-primary text-white">
-    <div class="container text-center">
-      <h1>Welcome to Scrolling Nav</h1>
-      <p class="lead">A landing page template freshly redesigned for Bootstrap 4</p>
+  <div class="banner-section">
+    <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+        <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item active h-banner" style="background-image: url('public/img/slider/img1.jpg');">
+          <!-- <img src="public/img/slider/img1.jpg" class="d-block w-100" alt="..."> -->
+          <div class="carousel-caption d-none d-md-block">
+            <div class="caption-text mx-auto my-auto">
+              <h5 class=" animated bounceInDown">Second slide label</h5>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item h-banner" style="background-image: url('public/img/slider/img2.jpg');">
+          <!-- <img src="public/img/slider/img1.jpg" class="d-block w-100" alt="..."> -->
+          <div class="carousel-caption d-none d-md-block">
+            <div class="caption-text mx-auto my-auto">
+              <h5 class=" animated bounceInDown">Second slide label</h5>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+         
+          </div>
+        </div>
+        <div class="carousel-item h-banner" style="background-image: url('public/img/slider/img3.jpg');">
+          <!-- <img src="public/img/slider/img1.jpg" class="d-block w-100" alt="..."> -->
+          <div class="carousel-caption d-none d-md-block">
+            <div class="caption-text mx-auto my-auto">
+              <h5>Second slide label</h5>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
     </div>
-  </header>
+  </div>
 
   <section id="about">
     <div class="container">
