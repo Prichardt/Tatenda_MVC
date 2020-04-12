@@ -7,10 +7,8 @@ class Portfolio extends Controller{
     }
 
     public function index(){
-        // echo "We are in home index";
         $data = array(
-            "id"=>Session::get('id'),
-            "username"=>"Tatenda"   
+            "pageName"=>('Portfolio')            
         );
       
      

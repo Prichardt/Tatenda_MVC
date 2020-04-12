@@ -1,3 +1,14 @@
+.btn-primary {
+  background-color: #008000;
+  border: none;
+  color: #ffffff;
+}
+
+.btn-primary:hover {
+  background-color: #1F1F1F;
+  color: #cccccc;
+}
+
 .theme-bg {
   background-color: #008000;
   color: #ffffff;
@@ -36,20 +47,40 @@
   color: #0077B5;
 }
 
+.top-bar .linkedin-bg:hover {
+  color: #008000;
+}
+
 .top-bar .facebook-bg {
   color: #4267B2;
+}
+
+.top-bar .facebook-bg:hover {
+  color: #008000;
 }
 
 .top-bar .twitter-bg {
   color: #1DA1F2;
 }
 
+.top-bar .twitter-bg:hover {
+  color: #008000;
+}
+
 .top-bar .youtube-bg {
   color: #FF0000;
 }
 
+.top-bar .youtube-bg:hover {
+  color: #008000;
+}
+
 .top-bar .skype-bg {
   color: #28A8EA;
+}
+
+.top-bar .skype-bg:hover {
+  color: #008000;
 }
 
 .top-bar .top-bar-left {
@@ -62,9 +93,9 @@
   float: right;
 }
 
-@media only screen and (max-width: 920px) {
+@media only screen and (max-width: 992px) {
   .top-bar {
-    display: none;
+    display: none !important;
   }
 }
 
@@ -75,6 +106,13 @@
 .navbar .navbar-brand {
   width: 250px;
   height: auto;
+}
+
+@media only screen and (max-width: 992px) {
+  .navbar .navbar-brand {
+    width: 150;
+    height: auto;
+  }
 }
 
 .navbar .navbar-brand-scroll {
@@ -92,9 +130,28 @@
   color: #008000;
 }
 
+@media only screen and (max-width: 992px) {
+  .navbar {
+    border-bottom: 1px solid #008000;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 2px;
+    -webkit-box-shadow: 0px 1px 10px #999;
+            box-shadow: 0px 1px 10px #999;
+  }
+}
+
+.navbar .navbar-toggler-icon i {
+  padding: 0px;
+  font-size: 2em;
+  color: #ffffff;
+}
+
 .navbar-scroll {
   border-bottom: 1px solid #008000;
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, 0.8);
+  border-radius: 2px;
+  -webkit-box-shadow: 0px 1px 10px #999;
+          box-shadow: 0px 1px 10px #999;
 }
 
 .banner-section .carousel-caption {
@@ -129,6 +186,60 @@
   border-radius: 100%;
 }
 
+.top-banner .banner-img {
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 50vh;
+}
+
+@media only screen and (max-width: 920px) {
+  .top-banner .banner-img {
+    height: 40vh;
+  }
+}
+
+.top-banner .top-banner-text {
+  background-color: rgba(0, 0, 0, 0.8);
+  width: 100%;
+  height: 100%;
+  left: 0px;
+  bottom: 0px;
+}
+
+.top-banner .top-banner-text .text-banner {
+  position: relative;
+  top: 70%;
+}
+
+.top-banner .top-banner-text .text-banner h5 {
+  font-weight: 600;
+  font-size: 2em;
+  color: #ffffff;
+}
+
+.top-banner .top-banner-text .text-banner p a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.top-banner .top-banner-text .text-banner p i {
+  color: #ffffff;
+  padding-left: 0.4em;
+  padding-right: 0.4em;
+}
+
+.top-banner .top-banner-text .text-banner p span {
+  color: #008000;
+}
+
+@media only screen and (max-width: 992px) {
+  .top-banner .top-banner-text .text-banner {
+    top: 55%;
+  }
+}
+
 .h-banner {
   background-size: cover;
   background-position: center center;
@@ -137,8 +248,19 @@
   height: 80vh;
 }
 
+@media only screen and (max-width: 992px) {
+  .h-banner {
+    height: 40vh;
+  }
+}
+
 .dropdown:hover.dropdown-menu {
   display: block;
+}
+
+footer {
+  background-color: #1F1F1F;
+  color: #cccccc;
 }
 
 footer .horizontal-line-colour {
@@ -150,7 +272,10 @@ footer .contact-details {
 }
 
 footer .contact-details h4 {
-  text-align: center;
+  text-align: left;
+  font-weight: 600;
+  font-size: 1.5em;
+  color: #008000;
 }
 
 footer .contact-details i {
@@ -162,5 +287,60 @@ footer .contact-details i {
 footer .contact-details span {
   float: left;
   text-align: left;
+}
+
+footer .footer-quick-links h4 {
+  text-align: left;
+  font-weight: 600;
+  font-size: 1.5em;
+  color: #008000;
+}
+
+footer .footer-quick-links ul {
+  list-style-type: none;
+}
+
+footer .footer-quick-links ul li::before {
+  font-family: FontAwesome;
+  display: inline-block;
+  padding-right: 6px;
+  font-weight: 900;
+  content: "\f105";
+}
+
+footer .footer-about img {
+  width: 160px;
+}
+
+footer .footer-about i {
+  padding: 0.5em;
+  border: 1px solid #cccccc;
+  border-radius: 50%;
+  margin: 1px 3px 5px 6px;
+  color: #cccccc;
+}
+
+footer .footer-about i:hover {
+  background-color: #008000;
+}
+
+.service-home h3 {
+  font-size: 1.3em;
+}
+
+.contact-section i {
+  color: #ffffff;
+  font-size: 2em;
+  background-color: #008000;
+  padding: 0.5em;
+  border-radius: 50%;
+}
+
+.contact-section .shadow {
+  border-radius: 0.5em;
+}
+
+.contact-section .shadow .contact-info {
+  height: 30vh;
 }
 /*# sourceMappingURL=stlye.css.map */
