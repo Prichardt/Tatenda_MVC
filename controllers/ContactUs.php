@@ -14,4 +14,13 @@ class ContactUs extends Controller{
      
         $this->view->renderTemplate('contact-us/index.html', $data);
     }
+
+    public function send(){
+       $msg = $this->model->sendMail();
+        $data = array(
+            "pageName"=>"Contact Us",
+            "sendMsg" => $msg
+        );
+        $this->view->renderTemplate('contact-us/index.html', $data);
+    }
 }

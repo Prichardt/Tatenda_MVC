@@ -7,7 +7,9 @@ $baseDir = dirname($vendorDir);
 
 return array(
     'Bootstrap' => $baseDir . '/library/Bootstrap.php',
+    'Content' => $baseDir . '/library/Content.php',
     'Controller' => $baseDir . '/library/Controller.php',
+    'Model' => $baseDir . '/library/Model.php',
     'Session' => $baseDir . '/library/Session.php',
     'Views' => $baseDir . '/library/Views.php',
 );

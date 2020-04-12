@@ -48,7 +48,9 @@ class ComposerStaticInit8d0b9f5e2dfb10cec15388016c7c350f
 
     public static $classMap = array (
         'Bootstrap' => __DIR__ . '/../..' . '/library/Bootstrap.php',
+        'Content' => __DIR__ . '/../..' . '/library/Content.php',
         'Controller' => __DIR__ . '/../..' . '/library/Controller.php',
+        'Model' => __DIR__ . '/../..' . '/library/Model.php',
         'Session' => __DIR__ . '/../..' . '/library/Session.php',
         'Views' => __DIR__ . '/../..' . '/library/Views.php',
     );
