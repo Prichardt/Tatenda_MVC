@@ -1,62 +1,75 @@
-{% extends "base.html" %}
-{% block title %}Service{% endblock %}
-{% block metaDescription %}"PHP mvc website template by Prichard Mukombi"{% endblock %}
-    {% block body%}
-<!-- <section class="top-banner">  
-        <div class="banner-img" style="background-image: url('public/img/banner/top-banner1.jpg');   ">
-            <div class="top-banner-text">
-                <div class="text-banner text-center">
-                    <h5>
-                        {{pageName}}
-                    </h5>
-                    <p><a href="home">Home</a> <i class="fas fa-angle-right"></i> <span>{{pageName}}</span></p>
-                </div>              
-            </div>
+{% extends "base.html" %} {% block title %}Service{% endblock %} {% block
+metaDescription %}"PHP mvc website template by Prichard Mukombi"{% endblock %}
+{% block body%} {% include 'layout/topbanner.html' %}
+
+<section class="">
+  <div class="container p-3">
+    <div>
+      <div>
+        <h4 class="">Website</h4>
+        <div class="">
+          <p>
+            Functional, appealing web design is crucial for success in today’s
+            digital world. With more people using online platforms to research
+            and purchase products and services than ever before, creating a
+            visually engaging website for your business in paramount
+          </p>
         </div>
-</section> -->
-{% include 'layout/topbanner.html' %}
-   <div class=" container">
-        <div class="row">
-             <div class="col-lg-3">
-                 <div>
-                     <h4>Website</h4>
-                 </div>
-             </div>
-             <div class="col-lg-3">
-                 <div>
-                     <h4>Mobile Apps</h4>
-                 </div>
-             </div>
-             <div class="col-lg-3">
-                 <div>
-                     <h4>Graphics</h4>
-                 </div>
-             </div>
-             <div class="col-lg-3">
-                 <div>
-                     <h4>Printing</h4>
-                 </div>
-             </div>
-             <div class="col-lg-3">
-                 <div>
-                     <h4>IT Support</h4>
-                 </div>
-             </div>
-             <div class="col-lg-3">
-                 <div>
-                     <h4>Digital Marketing</h4>
-                 </div>
-             </div>
-             <div class="col-lg-3">
-                 <div>
-                     <h4>Photography</h4>
-                 </div>                 
-             </div>
-             <div class="col-lg-3">
-                 <div>
-                     <h4>Video Production</h4>
-                 </div>
-             </div>
-        </div>
-   </div>
-    {% endblock %}
+      </div>
+      <div>
+        <h4 class="">Website</h4>
+      </div>
+      <div>
+        <h4 class="">Website</h4>
+      </div>
+      <div>
+        <h4 class="">Website</h4>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- <div class="container">
+  <div class="row">
+    <div class="col-lg-3">
+      <div>
+        <h4>Website</h4>
+      </div>
+    </div>
+    <div class="col-lg-3">
+      <div>
+        <h4>Mobile Apps</h4>
+      </div>
+    </div>
+    <div class="col-lg-3">
+      <div>
+        <h4>Graphics</h4>
+      </div>
+    </div>
+    <div class="col-lg-3">
+      <div>
+        <h4>Printing</h4>
+      </div>
+    </div>
+    <div class="col-lg-3">
+      <div>
+        <h4>IT Support</h4>
+      </div>
+    </div>
+    <div class="col-lg-3">
+      <div>
+        <h4>Digital Marketing</h4>
+      </div>
+    </div>
+    <div class="col-lg-3">
+      <div>
+        <h4>Photography</h4>
+      </div>
+    </div>
+    <div class="col-lg-3">
+      <div>
+        <h4>Video Production</h4>
+      </div>
+    </div>
+  </div>
+</div> -->
+{% endblock %}

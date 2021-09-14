@@ -5,8 +5,20 @@
 }
 
 .btn-primary:hover {
-  background-color: #1F1F1F;
-  color: #cccccc;
+  background-color: #86BC42;
+  color: #ffffff;
+}
+
+.btn-success {
+  background-color: #008000;
+  padding: 2px 8px;
+  border: none;
+  color: #ffffff;
+}
+
+.btn-success:hover {
+  background-color: #86BC42;
+  color: #ffffff;
 }
 
 .theme-bg {
@@ -16,6 +28,12 @@
 
 .theme-text {
   color: #008000;
+}
+
+.theme-bottom-border {
+  border-bottom: 2px solid #008000;
+  width: 100px;
+  margin-bottom: 1em;
 }
 
 .top-bar {
@@ -167,11 +185,6 @@
   top: 70%;
 }
 
-.banner-section .carousel-caption .caption-text h5 {
-  -webkit-animation-delay: 3s;
-          animation-delay: 3s;
-}
-
 .banner-section .carousel-control-prev {
   z-index: 10;
 }
@@ -184,6 +197,10 @@
   width: 10px;
   height: 10px;
   border-radius: 100%;
+}
+
+.banner-section .carousel-indicators li:active {
+  background-color: #008000;
 }
 
 .top-banner .banner-img {
@@ -326,6 +343,11 @@ footer .footer-about i:hover {
 
 .service-home h3 {
   font-size: 1.3em;
+}
+
+.about-h h4 {
+  font-weight: 600;
+  font-size: 1.7em;
 }
 
 .contact-section i {

@@ -9,6 +9,11 @@ $theme: #008000;
 .theme-text {
     color: $theme;
 }
+.theme-bottom-border{
+    border-bottom: 2px solid $theme;
+    width: 100px;
+    margin-bottom: 1em;
+}
 
 .top-bar {
     border-bottom: 1px solid $theme;
@@ -156,9 +161,9 @@ $theme: #008000;
             position: relative;
             top: 70%;
 
-            h5 {
-                animation-delay: 3s;
-            }
+            // h5 {
+            //     animation-delay: 3s;
+            // }
         }
     }
 
@@ -174,6 +179,9 @@ $theme: #008000;
         width: 10px;
         height: 10px;
         border-radius: 100%;
+        &:active{
+            background-color: $theme;
+        }
     }
 
 }
@@ -335,6 +343,12 @@ footer {
 .service-home{
     h3{
         font-size: 1.3em;
+    }
+}
+.about-h{
+    h4{
+        font-weight: 600;
+        font-size: 1.7em;
     }
 }
 

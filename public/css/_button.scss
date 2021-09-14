@@ -3,7 +3,17 @@
     border: none;
     color: #ffffff;
     &:hover{
-        background-color: #1F1F1F;
-        color: #cccccc;
+        background-color: #86BC42;
+        color: #ffffff;
     }
+}
+.btn-success{
+    background-color: $theme;
+    padding: 2px 8px;
+    border: none;
+    color: #ffffff;
+    &:hover{
+        background-color: #86BC42;
+        color: #ffffff;
+    } 
 }

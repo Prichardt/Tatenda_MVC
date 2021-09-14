@@ -1,127 +1,192 @@
-{% extends "base.html" %}
-{% block title %}Home{%endblock%}
-{%block body%}
-  <div class="banner-section">
-    <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
-      <ol class="carousel-indicators">
-        <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
-        <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
-        <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
-      </ol>
-      <div class="carousel-inner">
-        <div class="carousel-item active h-banner" style="background-image: url('public/img/slider/img1.jpg');">
-          <!-- <img src="public/img/slider/img1.jpg" class="d-block w-100" alt="..."> -->
-          <div class="carousel-caption d-none d-md-block">
-            <div class="caption-text mx-auto my-auto">
-              <h5 class=" animated bounceInDown">Second slide label</h5>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            </div>
-          </div>
-        </div>
-        <div class="carousel-item h-banner" style="background-image: url('public/img/slider/img2.jpg');">
-          <!-- <img src="public/img/slider/img1.jpg" class="d-block w-100" alt="..."> -->
-          <div class="carousel-caption d-none d-md-block">
-            <div class="caption-text mx-auto my-auto">
-              <h5 class=" animated bounceInDown">Second slide label</h5>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            </div>
-         
-          </div>
-        </div>
-        <div class="carousel-item h-banner" style="background-image: url('public/img/slider/img3.jpg');">
-          <!-- <img src="public/img/slider/img1.jpg" class="d-block w-100" alt="..."> -->
-          <div class="carousel-caption d-none d-md-block">
-            <div class="caption-text mx-auto my-auto">
-              <h5>Second slide label</h5>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            </div>
+{% extends "base.html" %} {% block title %}Home{%endblock%} {% block
+metaDescription %} "Heavenily Tech Solutions is a media company, that build
+websites and apps that help you publish great content across all devices,
+platforms and experiences. We work closely with businesses, organisations and
+individuals, to provide a high-quality creative service with a real difference."
+{% endblock %} {% block metaKeywords%} "Websites, mobile, mobile apps, desktop
+apps, IT support, IT technician" {%endblock%} {%block body%}
+<div class="banner-section">
+  <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li
+        data-target="#carouselExampleCaptions"
+        data-slide-to="0"
+        class="active"
+      ></li>
+      <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+      <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner">
+      <div
+        class="carousel-item active h-banner"
+        style="background-image: url('public/img/slider/img1.jpg');"
+      >
+        <!-- <img src="public/img/slider/img1.jpg" class="d-block w-100" alt="..."> -->
+        <div class="carousel-caption d-none d-md-block">
+          <div class="caption-text mx-auto my-auto">
+            <h5 class="animated fadeIn">Second slide label</h5>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
           </div>
         </div>
       </div>
-      <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="sr-only">Previous</span>
-      </a>
-      <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="sr-only">Next</span>
-      </a>
+      <div
+        class="carousel-item h-banner"
+        style="background-image: url('public/img/slider/img2.jpg');"
+      >
+        <!-- <img src="public/img/slider/img1.jpg" class="d-block w-100" alt="..."> -->
+        <div class="carousel-caption d-none d-md-block">
+          <div class="caption-text mx-auto my-auto">
+            <h5 class="animated bounceInDown">Second slide label</h5>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </div>
+        </div>
+      </div>
+      <div
+        class="carousel-item h-banner"
+        style="background-image: url('public/img/slider/img3.jpg');"
+      >
+        <!-- <img src="public/img/slider/img1.jpg" class="d-block w-100" alt="..."> -->
+        <div class="carousel-caption d-none d-md-block">
+          <div class="caption-text mx-auto my-auto">
+            <h5>Second slide label</h5>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <a
+      class="carousel-control-prev"
+      href="#carouselExampleCaptions"
+      role="button"
+      data-slide="prev"
+    >
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a
+      class="carousel-control-next"
+      href="#carouselExampleCaptions"
+      role="button"
+      data-slide="next"
+    >
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+</div>
+<!-- about -->
+<section class="about-h pt-4 pb-4">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 mx-auto text-center">
+        <div>
+          <h4>About<span class="theme-text"> Heavenily Tech</span></h4>
+          <div class="theme-bottom-border mx-auto"></div>
+          <div class="pb-1 animated fadeInUp">
+            <i class=" theme-text">"Connecting your ideas to your audience and to your business"</i>
+          </div>
+          <p>
+            Heavenily Tech Solutions is a media company, that build websites and
+            apps that help you publish great content across all devices,
+            platforms and experiences. We work closely with businesses,
+            organisations and individuals, to provide a high-quality creative
+            service with a real difference.
+          </p>
+        </div>
+      </div>
     </div>
   </div>
+</section>
+
 <section>
-  <div class=" container pt-4">
-    <div class="row service-home">
+  <div class="container">
+    <div class="text-center">
+      <p>
+        Design
+Our experience-led design process keeps the user at the centre of our mobile app development. We use the latest in design thinking, user experience, visual design and implementation best practices to ensure the mobile apps we design attract and engage users with meaning and utility.
+      </p>
+    </div>
+  </div>
+</section>
+<!-- services -->
+<section class="services-h pt-4 pb-4">
+  <div class="container">
+    <div class=" text-center">
+      <h4><span class="theme-text"> Our </span> Serivces</h4>
+      <div class="theme-bottom-border mx-auto"></div>
+    </div>
+    <div class="row service-home animated fadeInUp">
       <div class="col-lg-3">
         <div class="service-block shadow p-3 mb-5 bg-white rounded">
           <div class="text-center">
             <h3>Websites</h3>
-          </div>          
+            <div>
+              <p>
+                Functional, appealing web design is crucial for success in today’s 
+                digital world. With more people using online platforms to research
+                and purchase products and services than ever before, 
+                creating a visually engaging website for your business in paramount 
+              </p>
+              <div class="text-center">
+                <!-- <a href="services" class="btn btn-success shadow">Read more</a> -->
+              </div>
+            </div>
+          </div>
         </div>
       </div>
       <div class="col-lg-3">
         <div class="service-block shadow p-3 mb-5 bg-white rounded">
           <div class="text-center">
             <h3>Mobile Apps</h3>
-          </div>          
+            <div>
+              <p>
+                Our expert team of multi-disciplinary specialists help you to create 
+                innovative mobile apps that attract, engage and retain your customers.
+
+                We are committed to delivering the experience that your users deserve while helping you to achieve your business goals. Cross-platform development with Flutter delivers the rich native mobile ecosystem experience expected by your users while enabling the economy benefits of a single code base and development toolset. This gives us access to the latest mobile app development features and techniques, enabling us to expedite the development process, decreasing our time frames and helping get your product to market faster.
+              </p>
+              <div class="text-center">
+                <!-- <a href="services" class="btn btn-success shadow">Read more</a> -->
+              </div>
+            </div>
+          </div>
         </div>
       </div>
       <div class="col-lg-3">
         <div class="service-block shadow p-3 mb-5 bg-white rounded">
           <div class="text-center">
             <h3>Graphics</h3>
-          </div>          
+            <div>
+              <p>
+                
+              </p>
+              <div class="text-center">
+                <!-- <a href="services" class="btn btn-success shadow">Read more</a> -->
+              </div>
+            </div>
+          </div>
         </div>
       </div>
       <div class="col-lg-3">
         <div class="service-block shadow p-3 mb-5 bg-white rounded">
           <div class="text-center">
             <h3>Printing</h3>
-          </div>          
+            <div>
+              <p>
+                
+              </p>
+              <div class="text-center">
+                <!-- <a href="services" class="btn btn-success shadow">Read more</a> -->
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-    <div class=" text-center">
+    <div class="text-center">
       <a href="services" class="btn btn-primary shadow">View All Services</a>
     </div>
   </div>
 </section>
 
-  <section id="about">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-8 mx-auto">
-          <h2>About this page</h2>
-          <p class="lead">This is a great place to talk about your webpage. This template is purposefully unstyled so you can use it as a boilerplate or starting point for you own landing page designs! This template features:</p>
-          <ul>
-            <li>Clickable nav links that smooth scroll to page sections</li>
-            <li>Responsive behavior when clicking nav links perfect for a one page website</li>
-            <li>Bootstrap's scrollspy feature which highlights which section of the page you're on in the navbar</li>
-            <li>Minimal custom CSS so you are free to explore your own unique design options</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section id="services" class="bg-light">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-8 mx-auto">
-          <h2>Services we offer</h2>
-          <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut optio velit inventore, expedita quo laboriosam possimus ea consequatur vitae, doloribus consequuntur ex. Nemo assumenda laborum vel, labore ut velit dignissimos.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section id="contact">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-8 mx-auto">
-          <h2>Contact us</h2>
-          <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero odio fugiat voluptatem dolor, provident officiis, id iusto! Obcaecati incidunt, qui nihil beatae magnam et repudiandae ipsa exercitationem, in, quo totam.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-  {%endblock%}
+{%endblock%}

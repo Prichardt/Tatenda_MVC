@@ -1,8 +1,5 @@
 <?php
-/**
- * Define website url including trailling slash on Domain "/"
- * 
- */
+
 define('SITE_URL', 'http://localhost/mvctate/');
 
 // site name
